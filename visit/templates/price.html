@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DesignStudioName</title>
+	<style>
+table { 
+	width: 100%;
+	height: 100px;
+	position: sticky;
+	border-spacing: 9px 5px;
+}
+td {
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #4a465e;
+	height: 120px;
+	border-radius: 10px;
+}
+#top {
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 21px;
+}
+body {
+	margin-right: 70px;
+	margin-left: 70px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #00001a;
+}
+#first {
+	width: 98.5%;
+	height: 610px;
+	margin-left: 10px;
+	margin-right: 21px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	background-color: #363a46;
+	border-radius: 10px;
+}
+#last {
+	height: 75px;
+	width: 98.5%;
+	background-color: #4ab25e;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 7px;
+	border-radius: 10px;
+}
+a:link {
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 25px;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 25px;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 27px;
+	text-decoration: none;
+}
+a:active{
+	color: grey;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 27px;
+	text-decoration: none;
+}
+#paint {
+	background-color: #4ab25e;
+}
+#pt {
+	background-color: #4ab25e;
+}
+	</style>
+</head>
+<body>
+<div>
+	<div id="top">
+		<table cellpadding="0px" cellspacing="0px">
+		<tr>
+			<td width="24.5%" id="pt"><a href="{% url 'main' %}"><img src="{% static 'media/logo.png' %}" width="350px" height="150px"></a></td>
+			<td><font color="#4ab25e">T:</font> +7(420)69-69-666   <font color="#4ab25e">E:</font> howwebdev@ishard.god   <font color="#4ab25e">A:</font>ул.Круг, кв.9, г.Ад</td>
+		</tr>
+		</table>
+		<table cellpadding="0px" cellspacing="0px">
+			<tr>
+    			<td width="25.1%"><a href="{% url 'main' %}"><img src="{% static 'media/pen.png' %}" width="50px" height="50px"> Работы</a></td>
+    			<td><a href="{% url 'about' %}"><img src="{% static 'media/lupa.png' %}" width="50px" height="50px">О нас</a></td>
+    			<td><a href="{% url 'designers' %}"><img src="{% static 'media/people.png' %}" width="50px" height="50px">Дизайнеры</a></td>
+    			<td id="paint"><a href=""><img src="{% static 'media/price.png' %}" width="50px" height="50px">Услуги</a></td>
+    			<td><a href="{% url 'contacts' %}"><img src="{% static 'media/phone.png' %}" width="50px" height="50px">Контакты</a></td>
+  			</tr>
+		</table>
+	</div>
+	<div id="first">
+		Блок с новыми работами
+	</div>
+	<div id="last">
+		Дополнительно
+	</div>
+</div>
+</body>
+</html>
+
+<!-- Главная-новые работы студии, добавить возможность добавлять картинку через админку. Как? https://qna.habr.com/q/332572 -->
