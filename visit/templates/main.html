@@ -40,6 +40,9 @@ body {
 	margin-top: 20px;
 	background-color: #363a46;
 	border-radius: 10px;
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 50px;
 }
 #last {
 	height: 75px;
@@ -50,6 +53,9 @@ body {
 	margin-left: 10px;
 	margin-right: 7px;
 	border-radius: 10px;
+	color: white;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 20px;
 }
 a:link {
 	color: white;
@@ -94,7 +100,7 @@ a:active{
 		</table>
 		<table cellpadding="0px" cellspacing="0px">
 			<tr>
-    			<td id="paint" width="25.1%"><a href=""><img src="{% static 'media/pen.png' %}" width="50px" height="50px"> Работы</a></td>
+    			<td id="paint" width="25.1%"><a href=""><img src="{% static 'media/pen.png' %}" width="60px" height="60px"> Работы</a></td>
     			<td><a href="{% url 'about' %}"><img src="{% static 'media/lupa.png' %}" width="50px" height="50px">О нас</a></td>
     			<td><a href="{% url 'designers' %}"><img src="{% static 'media/people.png' %}" width="50px" height="50px">Дизайнеры</a></td>
     			<td><a href="{% url 'price' %}"><img src="{% static 'media/price.png' %}" width="50px" height="50px">Услуги</a></td>
@@ -103,15 +109,10 @@ a:active{
 		</table>
 	</div>
 <div id="first">
-
-	<div id="post">
-		<!--<p>Опубликовано: {{ work.published_date }}</p>
-		<img src="{{ work.image }}">-->
-	</div>
-
+		Здесь контент, любой, абсолютно. Фото, статьи, текст и прочее. Так же на сайте можно установить чат вк, ссылки на соцсети и прочие виджеты.
 </div>
 	<div id="last">
-
+		Здесь какая-нибудь доп. инфа: контакты, вакансии и прочее дерьмо
 	</div>
 </div>
 </body>
